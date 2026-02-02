@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicole Missiona — Made With All My Love</title>
+    <meta
+      name="description"
+      content="A cute, pink, animated single-page site for Nicole Missiona — with a Tagalog poem, a dance toggle, and a music player placeholder."
+    />
+    <meta property="og:title" content="Nicole Missiona — Made With All My Love" />
+    <meta
+      property="og:description"
+      content="A cute, pink, animated single-page site with a Tagalog poem, a dance toggle, and a music player placeholder."
+    />
+    <script type="module">
+      if (import.meta.hot?.on) {
+        import.meta.hot.on('vite:error', (error) => {
+          if (error.err) {
+            console.error(
+              [error.err.message, error.err.frame].filter(Boolean).join('\n'),
+            )
+          }
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

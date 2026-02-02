@@ -128,15 +128,15 @@ export default function BackgroundMusic({ src, title }: Props) {
   }
 
   return (
-    <div className="pointer-events-auto">
+    <div className="pointer-events-auto w-full sm:w-auto">
       <audio ref={audioRef} src={src} preload="auto" autoPlay playsInline />
 
-      <div className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/75 px-3 py-2 shadow-soft ring-1 ring-blush-200 backdrop-blur">
+      <div className="flex max-w-full flex-wrap items-center gap-2 rounded-full border border-white/70 bg-white/75 px-3 py-2 shadow-soft ring-1 ring-blush-200 backdrop-blur">
         <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-brand-400 text-white shadow-soft">
           <Music2 className="h-4 w-4" />
         </div>
 
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <div className="truncate text-xs font-extrabold text-ink">{title}</div>
           {loadError ? (
             <div className="text-[11px] font-semibold text-ink/60">Audio file not found</div>
@@ -149,7 +149,7 @@ export default function BackgroundMusic({ src, title }: Props) {
           )}
         </div>
 
-        <div className="ml-1 flex items-center gap-2">
+        <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={togglePlay}

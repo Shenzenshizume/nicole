@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div className="font-cute">
-      <main className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-6">
+      <main className="relative flex min-h-[100svh] items-start justify-center overflow-x-hidden px-4 py-6 md:items-center md:overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute left-[-120px] top-[-140px] h-[420px] w-[420px] rounded-full bg-blush-100/70 blur-3xl" />
           <div className="absolute right-[-160px] top-[10%] h-[520px] w-[520px] rounded-full bg-blush-200/70 blur-3xl" />
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         <div className="w-full max-w-5xl">
-          <div className="rounded-[32px] border border-white/70 bg-white/60 p-5 shadow-soft ring-1 ring-blush-200 backdrop-blur sm:p-7">
+          <div className="rounded-[28px] border border-white/70 bg-white/60 p-4 shadow-soft ring-1 ring-blush-200 backdrop-blur sm:rounded-[32px] sm:p-7">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div className="min-w-0">
                 <h1 className="truncate text-3xl font-black tracking-tight text-ink sm:text-4xl">Nicole Missiona</h1>
@@ -54,17 +54,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-5 grid gap-5 md:grid-cols-[1.25fr_0.75fr] md:items-stretch">
+            <div className="mt-4 grid gap-4 md:mt-5 md:grid-cols-[1.25fr_0.75fr] md:items-stretch">
               <div className="min-w-0">
-                <PoemCard onCopy={copyText} />
+                <PoemCard onCopy={copyText} showMobileCouple />
               </div>
               <div className="hidden md:block">
                 <DancingCouple />
               </div>
-            </div>
-
-            <div className="mt-5 md:hidden">
-              <DancingCouple />
             </div>
 
             <Footer />

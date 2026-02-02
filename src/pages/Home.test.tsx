@@ -15,7 +15,7 @@ function mockClipboard() {
 test("renders hero and poem", () => {
   render(<Home />);
   expect(screen.getByRole("heading", { name: /nicole missiona/i })).toBeInTheDocument();
-  expect(screen.getByText(/tula \(tagalog poem\)/i)).toBeInTheDocument();
+  expect(screen.getByText("sana ikaw na")).toBeInTheDocument();
   expect(screen.getByText(/for the dancing and the dreaming/i)).toBeInTheDocument();
 });
 

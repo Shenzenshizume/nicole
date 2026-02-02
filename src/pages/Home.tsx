@@ -49,7 +49,7 @@ export default function Home() {
               <div className="flex justify-start sm:justify-end">
                 <BackgroundMusic
                   title="For the Dancing and the Dreaming"
-                  src="/audio/for-the-dancing-and-the-dreaming.mp3"
+                  src="/audio/for-the-dancing-and-the-dreaming.mp3?v=2"
                 />
               </div>
             </div>

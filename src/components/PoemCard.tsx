@@ -11,7 +11,7 @@ export default function PoemCard({ onCopy }: Props) {
       <div className="flex items-center justify-between gap-3 bg-gradient-to-r from-blush-100 via-white/40 to-blush-200/60 px-6 py-4">
         <div className="inline-flex items-center gap-2 text-sm font-extrabold text-ink">
           <Sparkles className="h-4 w-4 text-lilac" />
-          <span>Tula (Tagalog Poem)</span>
+          <span>sana ikaw na</span>
         </div>
         <button
           type="button"
@@ -33,10 +33,6 @@ export default function PoemCard({ onCopy }: Props) {
             ))}
           </div>
         </div>
-
-        <p className="mt-5 text-xs font-semibold text-ink/60">
-          You can edit the poem anytime in <span className="font-extrabold">src/utils/poem.ts</span>.
-        </p>
       </div>
     </div>
   );
